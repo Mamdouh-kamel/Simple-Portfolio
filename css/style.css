@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+  background-color: rgb(246, 246, 246);
+}
+a, i{
+  cursor: pointer;
+}
+/* nav start */
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 10px;
+
+}
+.navbar .nav-link:hover{
+  background-color: #fff;
+  color: #111 !important;
+  border-radius: 10px;
+}
+.navbar .nav-link.active{
+  background-color: #fff;
+  color: #111 !important;
+  border-radius: 10px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: white;
+}
+.navbar .show a{
+  padding: 5px 15px !important;
+  margin: 5px;
+  display: inline-block;
+}
+/* nav end */
+/* home start*/
+.home {
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+}
+.home .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.home .home-content {
+  color: white;
+}
+.home-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px !important;
+  /* font-weight: 900 !important; */
+  margin-bottom: 10px;
+}
+.home-content h1 {
+  font-size: 60px;
+  font-weight: 200;
+}
+.home-content h1::after{
+  content: " |";
+  animation-name: typing;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing{
+  
+  2%{ content: " |";}
+  4%{ content: " L|";}
+  6%{ content: " La|";}
+  8%{ content: " Lar|";}
+  10%{ content: " Larr|";}
+  12%{ content: " Larry|";}
+  14%{ content: " Larry D|";}
+  16%{ content: " Larry Da|";}
+  18%{ content: " Larry Dan|";}
+  20%{ content: " Larry Dani|";}
+  22%{ content: " Larry Danil|";}
+  23%{ content: " Larry Danile|";}
+  24%{ content: " Larry Daniles|";}
+  26%{ content: " Larry Daniles|";}
+  27%{ content: " Larry Danile|";}
+  28%{ content: " Larry Danil|";}
+  29%{ content: " Larry Dani|";}
+  30%{ content: " Larry Dan|";}
+  31%{ content: " Larry Da|";}
+  32%{ content: " Larry D|";}
+  33%{ content: " Larry|";}
+  34%{ content: " Larr|";}
+  35%{ content: " Lar|";}
+  36%{ content: " La|";}
+  37%{ content: " La|";}
+  38%{ content: " L|";}
+  39%{ content: " |";}
+  40%{ content: " D|";}
+  42%{ content: " De|";}
+  44%{ content: " De|";}
+  46%{ content: " Des|";}
+  48%{ content: " Desi|";}
+  50%{ content: " Desig|";}
+  52%{ content: " Design|";}
+  53%{ content: " Designe|";}
+  54%{ content: " Designer|";}
+  56%{ content: " Designer|";}
+  57%{ content: " Designe|";}
+  58%{ content: " Design|";}
+  59%{ content: " Desig|";}
+  60%{ content: " Desi|";}
+  61%{ content: " Des|";}
+  62%{ content: " De|";}
+  63%{ content: " D|";}
+  64%{ content: " |";}
+  66%{ content: " D|";}
+  68%{ content: " De|";}
+  70%{ content: " Dev|";}
+  72%{ content: " Deve|";}
+  74%{ content: " Devel|";}
+  76%{ content: " Develo|";}
+  78%{ content: " Develop|";}
+  79%{ content: " Develope|";}
+  81%{ content: " Developer|";}
+  83%{ content: " Developer|";}
+  84%{ content: " Develope|";}
+  86%{ content: " Develop|";}
+  88%{ content: " Develo|";}
+  90%{ content: " Devel|";}
+  92%{ content: " Deve|";}
+  94%{ content: " Dev|";}
+  96%{ content: " De|";}
+  98%{ content: " D|";}
+  100%{ content: " |";}
+}
+.icons a {
+  color: white;
+}
+.icons span {
+  display: inline-block;
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+}
+.ico-circle:hover{
+  background-color: #fff;
+  color: #111;
+}
+
+/* home end */
+/* about start */
+.about {
+  padding: 100px 0;
+}
+
+.img-dot {
+  padding: 0 0 0 30px;
+  z-index: 99;
+}
+.img-dot::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+  background-image: url(../img/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.about-content h3 {
+  font-weight: 800;
+  font-size: 30px;
+}
+.about-content span {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+.about-content p {
+  line-height: 26px;
+  font-size: 16px;
+  margin: 25px 0;
+}
+.skills .skills-progress {
+  width: 100%;
+  height: 25px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+  box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+  position: relative;
+}
+.skills h6 {
+  font-size: 13px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.skills .skills-progress span {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10%;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.skills .skills-progress span:after {
+  content: attr(data-value);
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  font-size: 11px;
+  color: #fff;
+}
+.cv-btn,
+.btn {
+  font-size: 13px !important;
+  padding: 10px 30px;
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+.cv-btn:hover {
+  background-color: white;
+  color: black;
+}
+/* about end */
+/* services start */
+
+.title h3 {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  z-index: 99;
+  margin: 70px 0;
+}
+.title h3:after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../img/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+
+.serv-card {
+  padding: 50px 20px;
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+  box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: inline-flex;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center;
+}
+.serv-card h6 {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.serv-card:hover .icon {
+  background-color: #1c1c1c;
+  color: #f4f4f4;
+}
+/* services end */
+/* portfolio start */
+.filtering span {
+  margin: 0 15px;
+  color: #222;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+}
+.filtering span:before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #111;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.4s;
+  z-index: -1;
+}
+.portfolio .filtering .active:before {
+  width: 95%;
+}
+.filtering .nav-link{
+  color: #111 !important;
+  margin: 0px 5px;
+}
+.filtering .nav-link.active{
+  background-color: #111 !important;
+  color: #fff !important;
+}
+
+.item-img-overlay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 2;
+  transform: translateY(10px);
+}
+.item-img:hover .item-img-overlay {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.view-mid {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+.item-img h6 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  margin-bottom: 15px;
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-15px);
+  transition: all 0.5s;
+}
+.item-img:hover h6{  
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.item-img .icon i {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  background: #111;
+  color: #eee;
+}
+.item-blog .icon i:hover {
+  color: black;
+  background-color: white;
+}
+/* portfolio end */
+/* testimonials start */
+.box-text{
+  width: 100%;
+  height: 300px;
+  display: block;
+  padding: 20% 5%;
+  /* background-color: yellow; */
+  border-radius: 15px;
+}
+.carousel-indicators{
+  left: 0;
+  top: auto;
+  bottom: -40px;
+}
+.carousel-indicators button{
+  background-color: grey !important;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50%;
+  margin: 0 8px !important;
+}
+.box-text h6{
+  font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+    letter-spacing: 0.5px;
+    color: #343434;
+
+}
+.box-text span{
+  font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+/* testimonials end */
+/* number start */
+.item-num .icon-num {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.item-num h3 {
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+ 
+.item-num p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #748182;
+  margin-bottom: 30px;
+
+}
+/* number end */
+/* blog start */
+/* .blog-card{
+  
+    box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%);
+} */
+.info .item-blog .icon-blog {
+  font-size: 25px;
+  display: inline-flex;
+  margin-bottom: 15px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.item-blog h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.item-blog p{
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
+.item-blog:hover .icon-blog{
+  background-color: black;
+  color: white;
+}
+.form-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.single-blog {
+	transition: all 0.30s ease 0s;
+  /* box-shadow: 0 13px 8px -10px rgb(0 0 0 / 10%); */
+
+}
+.single-blog:hover {
+	transform: translateY(-10px);
+}
+.single-blog .post-img {
+	position: relative;
+
+}
+.single-blog .post-img img {
+	max-width: 100%;
+	height: auto;
+}
+.single-blog .post-img:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background: rgba(255, 69, 0, 0.6);
+	transition: all 0.30s ease 0s;
+}
+.single-blog:hover .post-img:after {
+	opacity: 1;
+}
+.single-blog .single_blog {
+	border-top: none;
+	padding: 25px 20px 25px;
+	background: #fff;
+	position: relative;
+}
+.single-blog .post-title {
+	margin: 0 0 15px 0px;
+	font-size: 20px;
+	color: #333;
+	display: inline-block;
+	text-transform: capitalize;
+	transition: all 0.3s ease 0s;
+}
+.single-blog .blog-text {
+	font-size: 15px;
+	line-height: 23px;
+	margin: 7px 0 10px;
+}
+
+
+/* blog end */
+/* footer start */
+
+footer p {
+  font-size: 13px;
+  word-spacing: 2px;
+  color: #748182;
+}
+.footer-name span:hover{
+  color: #fff;
+  cursor: pointer;
+}
+/* footer end */
